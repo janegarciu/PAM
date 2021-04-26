@@ -78,7 +78,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" misplaced="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="cell" translatesAutoresizingMaskIntoConstraints="NO" id="1L6-rz-Vfs" userLabel="cell" customClass="CollectionViewCell" customModule="Traveller" customModuleProvider="target">
+                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="cell" translatesAutoresizingMaskIntoConstraints="NO" id="1L6-rz-Vfs" userLabel="cell" customClass="CollectionViewCell" customModule="Traveller" customModuleProvider="target">
                                         <rect key="frame" x="1" y="0.0" width="372" height="94"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -105,6 +105,7 @@
                                         <connections>
                                             <outlet property="countryName" destination="i8H-sr-iVe" id="JxV-2f-WGA"/>
                                             <outlet property="flag" destination="lX1-V0-1c2" id="pZb-Y3-Tpq"/>
+                                            <segue destination="e50-gh-LZB" kind="presentation" id="l6Q-Vj-0YK"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -120,6 +121,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wt9-Rd-fM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1062.3188405797102" y="128.57142857142856"/>
+        </scene>
+        <!--Maps Controller-->
+        <scene sceneID="dlF-4L-lp2">
+            <objects>
+                <viewController id="qA7-Bp-8da" customClass="MapsController" customModule="Traveller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tlA-EW-UhY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zf4-8S-VnC">
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zf4-8S-VnC" firstAttribute="top" secondItem="f0b-DR-tja" secondAttribute="top" id="YH4-yU-m7y"/>
+                            <constraint firstItem="f0b-DR-tja" firstAttribute="bottom" secondItem="Zf4-8S-VnC" secondAttribute="bottom" id="adA-UO-wRl"/>
+                            <constraint firstItem="f0b-DR-tja" firstAttribute="trailing" secondItem="Zf4-8S-VnC" secondAttribute="trailing" id="pgh-fs-P21"/>
+                            <constraint firstItem="Zf4-8S-VnC" firstAttribute="leading" secondItem="f0b-DR-tja" secondAttribute="leading" id="rHD-mp-bNo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f0b-DR-tja"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3DM-qR-uV5"/>
+                    <connections>
+                        <outlet property="mapsView" destination="Zf4-8S-VnC" id="qCs-SI-ehf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZh-21-v7h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2802.898550724638" y="123.88392857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ct1-uy-IRZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e50-gh-LZB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dJV-N7-G3h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qA7-Bp-8da" kind="relationship" relationship="rootViewController" id="CDb-jv-CsF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yuu-lF-aEx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892.753623188406" y="123.88392857142857"/>
         </scene>
     </scenes>
     <resources>
