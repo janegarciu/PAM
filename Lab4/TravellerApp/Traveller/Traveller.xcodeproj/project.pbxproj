@@ -10,6 +10,7 @@
 		8128352925FB665F0013F165 /* Icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8128352825FB665F0013F165 /* Icon.jpeg */; };
 		81855C05265524D100E999EA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81855C04265524D100E999EA /* MapViewController.swift */; };
 		81855C072655620100E999EA /* ApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81855C062655620100E999EA /* ApiViewController.swift */; };
+		81855C0D2655AC1100E999EA /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81855C0C2655AC1100E999EA /* CountryModel.swift */; };
 		8190C1FF25FA8EF100596B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8190C1FE25FA8EF100596B5E /* AppDelegate.swift */; };
 		8190C20125FA8EF100596B5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8190C20025FA8EF100596B5E /* SceneDelegate.swift */; };
 		8190C20325FA8EF100596B5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8190C20225FA8EF100596B5E /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		8128352A25FB67330013F165 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		81855C04265524D100E999EA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		81855C062655620100E999EA /* ApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewController.swift; sourceTree = "<group>"; };
+		81855C0C2655AC1100E999EA /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		8190C1FB25FA8EF100596B5E /* Traveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8190C1FE25FA8EF100596B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8190C20025FA8EF100596B5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		81855C082655A67000E999EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81855C0C2655AC1100E999EA /* CountryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				8190C22825FAE62A00596B5E /* CollectionViewCell.swift in Sources */,
 				81855C05265524D100E999EA /* MapViewController.swift in Sources */,
+				81855C0D2655AC1100E999EA /* CountryModel.swift in Sources */,
 				8190C22625FACDD100596B5E /* CountryController.swift in Sources */,
 				8190C20325FA8EF100596B5E /* ViewController.swift in Sources */,
 				81855C072655620100E999EA /* ApiViewController.swift in Sources */,
